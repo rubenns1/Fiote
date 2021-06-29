@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gadrient">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_gravity="center"
+        android:layout_margin="50dp"
+        android:id="@+id/profile_image"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:src="@drawable/clock"
+        app:civ_border_width="6dp"
+        app:civ_border_color="#C19A6B">
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escolha o horario de seu agendamento:"
+        android:layout_marginLeft="10dp"/>
+
+    <Spinner
+        android:id="@+id/listTimes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-5dp"/>
+
+    <Button
+        android:id="@+id/btnFinish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Finalizar Agendamento"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/btn_register"
+        android:drawableLeft="@drawable/check"
+        android:textColor="@color/white"
+        android:paddingLeft="95dp"
+        android:paddingRight="95dp"/>
+
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textAllCaps="false"
+        android:text="Voltar"
+        android:layout_marginTop="-7dp"
+        android:backgroundTint="@color/btn_recovery"
+        android:drawableLeft="@drawable/ret"
+        android:paddingLeft="160dp"
+        android:paddingRight="160dp"/>
+
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Desconectar"
+        android:textAllCaps="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="-6dp"
+        android:backgroundTint="#383e43"
+        android:drawableLeft="@drawable/close16"
+        android:textColor="@color/white"
+        android:paddingLeft="135dp"
+        android:paddingRight="135dp"/>
+</LinearLayout>

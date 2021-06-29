@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gadrient"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_reg_nome"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/txt_REG_NOME"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/reg_hint_nome"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:maxLength="25"
+        android:maxLines="1"
+        android:digits="abcdefghijklmnopqrstuvxywzABCDEFGHIJKLMNOPQRSTUVXWYZ "
+        android:textColorHint="@color/hintColor"
+        android:textColor="@color/txtColor"
+        android:backgroundTint="@color/edit_line_color"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_reg_sobrenome"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/txt_REG_SOBRENOME"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/reg_hint_sobrenome"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:maxLength="120"
+        android:maxLines="1"
+        android:inputType="textPersonName"
+        android:digits="abcdefghijklmnopqrstuvxywzABCDEFGHIJKLMNOPQRSTUVXWYZ "
+        android:textColorHint="@color/hintColor"
+        android:textColor="@color/txtColor"
+        android:backgroundTint="@color/edit_line_color"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_reg_cpf"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/txt_REG_CPF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/reg_hint_cpf"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:maxLength="14"
+        android:maxLines="1"
+        android:digits=".-01234567890"
+        android:inputType="numberSigned"
+        android:textColorHint="@color/hintColor"
+        android:textColor="@color/txtColor"
+        android:backgroundTint="@color/edit_line_color"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_reg_celular"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/txt_REG_CELULAR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/reg_hint_celular"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:maxLength="11"
+        android:inputType="number"
+        android:maxLines="1"
+        android:digits="1234567890"
+        android:textColorHint="@color/hintColor"
+        android:textColor="@color/txtColor"
+        android:backgroundTint="@color/edit_line_color"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_reg_nascimento"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/txt_REG_NASCIMENTO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/reg_hint_nascimento"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:digits="1234567890/"
+        android:textColorHint="@color/hintColor"
+        android:textColor="@color/txtColor"
+        android:backgroundTint="@color/edit_line_color"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_reg_email"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/txt_REG_LOGIN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/reg_hint_email"
+        android:inputType="textEmailAddress"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:maxLength="60"
+        android:maxLines="1"
+        android:digits="abcdefghijklmnopqrstuvxywzABCDEFGHIJKLMNOPQRSTUVXWYZ1234567890._-@"
+        android:textColorHint="@color/hintColor"
+        android:textColor="@color/txtColor"
+        android:backgroundTint="@color/edit_line_color"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_reg_senha"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/txt_REG_SENHA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/reg_hint_senha"
+        android:inputType="textPassword"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:textColorHint="@color/hintColor"
+        android:textColor="@color/txtColor"
+        android:backgroundTint="@color/edit_line_color"
+        android:autofillHints=""/>
+
+    <Button
+        android:id="@+id/btn_REG_SALVAR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_register_enviar"
+        android:textAllCaps="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="-2dp"
+        android:backgroundTint="@color/btn_recovery_send"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/check"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"/>
+
+    <Button
+        android:id="@+id/btn_REG_VOLTAR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_text_voltar"
+        android:textAllCaps="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="-7dp"
+        android:backgroundTint="@color/btn_recovery_back"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/ret"
+        android:paddingLeft="150dp"
+        android:paddingRight="150dp"/>
+</LinearLayout>

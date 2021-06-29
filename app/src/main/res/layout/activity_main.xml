@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gadrient"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_gravity="center"
+        android:layout_margin="50dp"
+        android:id="@+id/profile_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/user"
+        app:civ_border_width="6dp"
+        app:civ_border_color="#C19A6B">
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:text="@string/lbl_home_msg1"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_home_email"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/txt_MAIN_LOGIN"
+        android:inputType="textEmailAddress"
+        android:hint="@string/recovery_hint_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:textColorHint="@color/hintColor"
+        android:textColor="@color/txtColor"
+        android:maxLength="75"
+        android:maxLines="1"
+        android:backgroundTint="@color/edit_line_color"
+        android:digits="abcdefghijklmnopqrstuvxywzABCDEFGHIJKLMNOPQRSTUVXWYZ1234567890._-@"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_home_pw"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/txt_MAIN_SENHA"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:textColorHint="@color/hintColor"
+        android:textColor="@color/txtColor"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:backgroundTint="@color/edit_line_color"/>
+
+    <Button
+        android:id="@+id/btn_MAIN_LOGIN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_login"
+        android:textAllCaps="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="@color/btn_login"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/check"
+        android:paddingLeft="150dp"
+        android:paddingRight="150dp"/>
+
+    <Button
+        android:id="@+id/btn_MAIN_REGISTER"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_register"
+        android:textAllCaps="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="-7dp"
+        android:backgroundTint="@color/btn_register"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/pencil"
+        android:paddingLeft="125dp"
+        android:paddingRight="125dp"/>
+
+    <Button
+        android:id="@+id/btn_MAIN_RECOVERY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_recovery"
+        android:textAllCaps="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="-7dp"
+        android:backgroundTint="@color/btn_recovery"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/request"
+        android:paddingLeft="90dp"
+        android:paddingRight="90dp" />
+</LinearLayout>

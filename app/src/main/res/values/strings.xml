@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Fiote Barber 0.1 (Beta Test)</string>
+    <string name="lbl_home_msg1">Prezado cliente, seja bem vindo!\n\nEntre com seu usuário e senha, ou cadastre-se para acessar o nosso sistema.\n</string>
+    <string name="lbl_home_email">E-mail:</string>
+    <string name="lbl_home_pw">Senha:</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_register">Cadastre-se</string>
+    <string name="btn_recovery">Esqueci minha senha</string>
+    <string name="title_activity_register">Cadastro do Cliente</string>
+    <string name="lbl_reg_nome">Nome:</string>
+    <string name="reg_hint_nome">Primeiro nome</string>
+    <string name="lbl_reg_sobrenome">Sobrenome:</string>
+    <string name="reg_hint_sobrenome">Segundo nome</string>
+    <string name="lbl_reg_cpf">CPF:</string>
+    <string name="reg_hint_cpf">XXX.XXX.XXX-XX</string>
+    <string name="lbl_reg_celular">Celular:</string>
+    <string name="reg_hint_celular">Informe seu número</string>
+    <string name="lbl_reg_nascimento">Data de Nascimento:</string>
+    <string name="reg_hint_nascimento">ANO / MÊS / DIA</string>
+    <string name="lbl_reg_email">E-mail:</string>
+    <string name="reg_hint_email">Insira seu endereço de e-mail</string>
+    <string name="lbl_reg_senha">Senha:</string>
+    <string name="reg_hint_senha">Defina uma senha</string>
+    <string name="title_activity_recovery">Recuperação de dados</string>
+    <string name="recovery_hint_email">seunome@domain.com</string>
+    <string name="lbl_recovery_email">Informe seu endereço de e-mail:</string>
+    <string name="btn_recovery_pass">Recuperar conta</string>
+    <string name="btn_register_enviar">Finalizar Cadastro</string>
+    <string name="btn_text_voltar">Voltar</string>
+    <string-array name="lisTimes">
+        <item>08:00:00</item>
+        <item>08:00:00</item>
+        <item>08:00:00</item>
+        <item>08:00:00</item>
+        <item>08:00:00</item>
+        <item>08:00:00</item>
+        <item>08:00:00</item>
+        <item>08:00:00</item>
+    </string-array>
+</resources>

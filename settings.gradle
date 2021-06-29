@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Fiote Barber 0.1 (Beta Test)"

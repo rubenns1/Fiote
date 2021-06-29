@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gadrient">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:id="@+id/profile_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/user"
+        app:civ_border_width="6dp"
+        app:civ_border_color="#C19A6B">
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_activity_recovery"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/lbl_RECOVERY_LOGIN"
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/btn_recovery_send"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lbl_RECOVERY_SENHA"
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/btn_recovery_send"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_reg_cpf"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/txt_RECOVERY_CPF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:maxLength="14"
+        android:hint="@string/reg_hint_cpf"
+        android:digits="0123456789.-"
+        android:maxLines="1"
+        android:textColorHint="@color/hintColor"
+        android:textColor="@color/txtColor"
+        android:inputType="numberSigned"
+        android:backgroundTint="@color/edit_line_color"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_reg_nascimento"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/txt_RECOVERY_NASC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:hint="@string/reg_hint_nascimento"
+        android:digits="0123456789/"
+        android:maxLength="10"
+        android:inputType="phone"
+        android:layout_marginRight="7dp"
+        android:maxLines="1"
+        android:textColorHint="@color/hintColor"
+        android:textColor="@color/txtColor"
+        android:backgroundTint="@color/edit_line_color"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_recovery_email"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/txt_RECOVERY_LOGIN"
+        android:inputType="textEmailAddress"
+        android:hint="@string/recovery_hint_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:maxLength="35"
+        android:digits="abcdefghijklmnopqrstuvxywzABCDEFGHIJKLMNOPQRSTUVXWYZ1234567890._-@"
+        android:maxLines="1"
+        android:textColorHint="@color/hintColor"
+        android:textColor="@color/txtColor"
+        android:backgroundTint="@color/edit_line_color"/>
+
+    <Button
+        android:id="@+id/btn_RECOVERY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_recovery_pass"
+        android:textAllCaps="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="@color/btn_login"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/request"
+        android:paddingLeft="110dp"
+        android:paddingRight="110dp"/>
+
+    <Button
+        android:id="@+id/btn_RECOVERY_VOLTAR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_text_voltar"
+        android:textAllCaps="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="-7dp"
+        android:backgroundTint="@color/btn_recovery_back"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/ret"
+        android:paddingLeft="150dp"
+        android:paddingRight="150dp" />
+</LinearLayout>
